@@ -30,12 +30,12 @@ public class EmployeeRestController {
 		return service.addEmployee(emp);
 	}
 	
-	@GetMapping("/getbyid/{eid}")
+	@GetMapping("/getbyid/{id}")
 	public Employee getById(@PathVariable int eid) throws EmployeeNotFound {
 		return service.getById(eid);
 	}
 	
-	@PutMapping("/update")
+	@PutMapping("/updateEmployee")
 	public Employee update(@RequestBody Employee emp) {
 		return service.update(emp);
 	}
